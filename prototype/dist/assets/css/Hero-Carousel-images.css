@@ -1,0 +1,8 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+.horizScroll::-webkit-scrollabr {
+  display: none;
+}
+
