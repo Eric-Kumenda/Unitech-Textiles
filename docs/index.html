@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
@@ -25,29 +26,43 @@
     <link rel="stylesheet" href="assets/css/rangeSlider.css">
     <link rel="stylesheet" href="assets/css/nouislider.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/custom.compiled.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body style="font-family: Inter, sans-serif;">
     <nav class="navbar navbar-expand-md sticky-top bg-primary py-2 shadow" style="background: var(--bs-warning);" data-bs-theme="dark">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="mx-2" src="assets/img/Icon_Unitech.svg" width="32" height="32"><span class="d-none d-md-block">UNITECH<br>TEXTILE</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-4"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-4">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">FAQ</a></li>
+                <ul class="navbar-nav me-auto" style="font-family: Montserrat, sans-serif;">
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Products</a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item d-md-none"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link d-md-none" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link d-md-none" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link d-md-none" href="terms.html">Terms &amp; Conditions</a></li>
+                    <li class="nav-item px-2 d-none d-md-block" style="cursor: pointer;">
+                        <div class="nav-item dropdown h-100 d-flex align-items-center"><a aria-expanded="false" data-bs-toggle="dropdown" data-bss-hover-animate="pulse" class="text-body"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4">
+                                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-down fs-xs ms-1">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                </svg></a>
+                            <div class="dropdown-menu fs-sm" style="--bs-dropdown-spacer: .75 rem;" data-bs-theme="light"><a class="dropdown-item py-2 animate-underline animate-target" href="about.html">About Us</a><a class="dropdown-item py-2 animate-underline animate-target" href="contact.html">Contact</a><a class="dropdown-item py-2 animate-underline animate-target" href="blogs.html">Blog</a><a class="dropdown-item py-2 animate-underline animate-target" href="faq.html">Help Center (FAQ)</a><a class="dropdown-item py-2 animate-underline animate-target" href="terms.html">Terms &amp; Conditions</a></div>
+                        </div>
+                    </li>
                 </ul>
-                <div class="d-md-none my-2"><a class="btn btn-outline-primary btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                <div class="d-flex d-md-none justify-content-center my-2"><a class="btn btn-outline-light btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
                             <rect fill="none" height="24" width="24"></rect>
                             <path d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z"></path>
-                        </svg></a><a class="btn btn-outline-primary btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
+                        </svg></a><a class="btn btn-outline-light btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                             <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                        </svg></a><a class="btn btn-outline-primary btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                        </svg></a><a class="btn btn-outline-light btn-sm mx-2" role="button" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-                        </svg></a><button class="btn btn-primary btn-sm mx-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                        </svg></a><button class="btn btn-light btn-sm mx-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
                             <path d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
                         </svg></button></div>
@@ -67,60 +82,45 @@
                     </svg><span class="bg-light position-absolute top-0 start-100 translate-middle p-2 border rounded-circle ratio ratio-1x1"><small class="text-dark d-flex justify-content-center align-content-center py-1">0</small></span></button></div>
         </div>
     </nav>
-    <div class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false" id="carousel-1" style="height: 600px;">
-        <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100"><img class="img-fluid w-100 d-block position-absolute h-auto" src="https://images.unsplash.com/photo-1693443687750-611ad77f3aba?q=80&amp;w=2500&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide Image" style="z-index: -1;background-position: 0%,center;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold">SHOW YOUR BRILLIANCE</h1>
-                                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien.</p><a class="btn btn-primary me-2" role="button" href="shop.html">Shop Now</a>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 d-flex flex-column">
+                    <div class="my-auto py-4">
+                        <div class="swiper titles-slider position-relative">
+                            <div class="swiper-wrapper">
+                                <div class="text-center text-md-start swiper-slide">
+                                    <p class="fs-xl mb-2">The new warm collection</p>
+                                    <h4 class="display-5 text-uppercase mb-4">New fall <br class="d-none d-md-inline">season 2024</h4><a class="btn btn-outline-dark" role="button" href="#"> Shop now <i class="ci-arrow-up-right fs-lg ms-2 me-n1"></i></a>
+                                </div>
+                                <div class="text-center text-md-start swiper-slide">
+                                    <p class="fs-xl mb-2">Ready for the party?</p>
+                                    <h2 class="display-5 text-uppercase mb-4">Choose outfits for parties</h2><a class="btn btn-outline-dark" role="button" href="#"> Shop now <i class="ci-arrow-up-right fs-lg ms-2 me-n1"></i></a>
+                                </div>
+                                <div class="text-center text-md-start swiper-slide">
+                                    <p class="fs-xl mb-2">Shades of gray for your look</p>
+                                    <h2 class="display-5 text-uppercase mb-4">-50% on gray Collection</h2><a class="btn btn-outline-dark" role="button" href="#"> Shop now <i class="ci-arrow-up-right fs-lg ms-2 me-n1"></i></a>
+                                </div>
                             </div>
+                            <div id="sliderBullets" class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-auto fit-cover" src="https://images.unsplash.com/photo-1716951884284-4d138f2c42b2?w=2500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ5fHx8ZW58MHx8fHx8" alt="Slide Image" style="z-index: -1;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold">COUNTLESS CHOICES AVAILABLE</h1>
-                                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec.</p><a class="btn btn-primary me-2" role="button" href="product.html">Find Your Style</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-auto fit-cover" src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&amp;w=2500&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide Image" style="z-index: -1;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold">ORDER CUSTOM DESIGNS</h1>
-                                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary me-2" role="button" href="product.html">Just How You Like It</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-auto fit-cover" src="https://images.unsplash.com/photo-1737094540214-261561588b89?q=80&amp;w=2500&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide Image" style="z-index: -1;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold">CUSTOM BRANDING SERVICES</h1>
-                                <p class="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus.</p><a class="btn btn-primary me-2" role="button" href="#">Get Started</a>
+                <div class="col-md-6 col-lg-7 align-self-end">
+                    <div class="position-relative ms-md-n4">
+                        <div class="ratio" style="--bs-aspect-ratio: calc(662 / 770 * 100%);"></div>
+                        <div class="swiper images-slider position-absolute top-0 start-0 w-100 h-100">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid h-100" src="https://cartzilla-html.createx.studio/assets/img/home/fashion/v1/hero-slider/01.png" alt=""></div>
+                                <div class="swiper-slide"><img class="img-fluid h-100" src="https://cartzilla-html.createx.studio/assets/img/home/fashion/v1/hero-slider/02.png" alt=""></div>
+                                <div class="swiper-slide"><img class="img-fluid h-100" src="https://cartzilla-html.createx.studio/assets/img/home/fashion/v1/hero-slider/03.png" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-        <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3"></button></div>
-    </div>
+    </section>
     <section class="shadow-sm">
         <div class="container py-4 py-xl-5">
             <div class="row mb-5">
@@ -402,6 +402,21 @@
             </div>
         </div>
     </section>
+    <section class="py-5">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-1.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-2.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-3.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-4.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-5.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-6.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-7.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="https://bootstrapmade.com/content/demo/Impact/assets/img/clients/client-8.png" alt=""></div>
+            </div>
+            <div id="partnersPagination" class="swiper-pagination d-none"></div>
+        </div>
+    </section>
     <section style="position: relative;">
         <div class="container py-5 z-2 position-relative">
             <div class="d-flex flex-column justify-content-between flex-sm-row align-items-sm-center row gap-2 gap-sm-4 pb-xl-0-3 mb-4 mb-xl-5">
@@ -617,19 +632,19 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start item social"><a href="#"><img class="m-2" src="assets/img/Icon_Unitech.svg" width="40" height="40"><span class="text-light d-block">UNITECH<br>TEXTILE</span></a></div>
                 <div class="col-md-4 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6">COMPANY</h3>
+                    <h3 class="fs-6" style="font-family: Montserrat, sans-serif;">COMPANY</h3>
                     <ul class="list-unstyled">
                         <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="index.html">Home</a></li>
                         <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="about.html">About</a></li>
-                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="index.html">Contact</a></li>
+                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6">USEFUL LINKS</h3>
+                    <h3 class="fs-6" style="font-family: Montserrat, sans-serif;">USEFUL LINKS</h3>
                     <ul class="list-unstyled">
-                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="#">Privacy Policy</a></li>
-                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="#">Terms of Use</a></li>
-                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="#">Frequently Asked Questions</a></li>
+                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="terms.html">Privacy Policy</a></li>
+                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="terms.html">Terms of Use</a></li>
+                        <li class="my-2 animate-underline"><a class="link-light text-decoration-none animate-target" href="faq.html">Frequently Asked Questions</a></li>
                     </ul>
                 </div>
             </div>
@@ -648,14 +663,83 @@
                         </svg></a></div>
             </div>
         </div>
-    </footer>
+    </footer><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      speed: 800,
+      autoplay: {
+        delay: 2000,
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '#partnersPagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 80,
+        },
+        992: {
+          slidesPerView: 6,
+          spaceBetween: 120,
+        },
+      },
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Image slider (controlled)
+    const imageSlider = new Swiper('.images-slider', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      allowTouchMove: false,
+    });
+
+    // Titles slider (controller)
+    const titleSlider = new Swiper('.titles-slider', {
+      loop: true,
+      spaceBetween: 24,
+      speed: 400,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '#sliderBullets',
+        clickable: true,
+      },
+      controller: {
+        control: imageSlider,
+      },
+    });
+
+    // Link image slider to control title slider as well (bidirectional)
+    imageSlider.controller.control = titleSlider;
+  });
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.3.2/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cartzilla-html.createx.studio/assets/vendor/choices.js/choices.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/choice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
 </body>
 
 </html>
